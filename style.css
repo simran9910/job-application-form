@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(144, 89, 89);
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.apply_box{
+    max-width: 600px;
+    padding:20px ;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px ;
+    border-radius: 10px;
+}
+.title_box{
+    font-size: 20px;
+}
+
+.form_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 15px;
+}
+
+input,
+select,
+textarea{
+    padding:6px 20px;
+    border: 1px solid rgb(47, 16, 16);
+  border-radius: 4px;
+  font-size:15px;
+
+}
+.button_containter{
+    display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+
+}
+button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color:azure;
+    border:  2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+ .textarea_control{
+    grid-column-end: span 2 ;
+ 
+}
+
+.textarea_control textarea{
+    width: 100%;
+
+}
+@media (max-width: 460px){
+    .textarea_control{
+        grid-column-end:  1 /span 1 ;
+ 
+    }
+}
+
+
+
